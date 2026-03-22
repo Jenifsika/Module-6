@@ -25,7 +25,22 @@ To write a Python program that demonstrates **operator overloading** by overload
 ---
 
 ## 💻 Program
+```class Marks:
+    def __init__(self, value):
+        self.value = value
 
+
+    def __gt__(self, other):
+        return self.value > other.value
+
+
+obj1 = Marks(20)
+obj2 = Marks(10)
+
+print(obj1 > obj2)
+```
 ## Output
+<img width="1206" height="274" alt="image" src="https://github.com/user-attachments/assets/52aaaf6e-df17-4aab-9a16-0ba8e46cbea3" />
 
 ## Result
+Thus the program is executed successfully.
