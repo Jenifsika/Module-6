@@ -23,7 +23,43 @@ To implement **Encapsulation** in Python by defining a class `Rectangle` with **
 ---
 
 ## 💻 Program
+```
+from abc import ABC, abstractmethod
 
+class Shape(ABC): 
+    @abstractmethod
+    def area(self):    
+        pass
+
+
+class Rectangle(Shape):
+    def __init__(self, length, breadth):
+        self.__length = length      # private
+        self.__breadth = breadth    # private
+
+    def area(self):
+        return self.__length * self.__breadth
+
+
+class Circle(Shape):
+    def __init__(self, radius):
+        self.__radius = radius   # private
+
+    def area(self):
+        return 3.14 * self.__radius * self.__radius
+
+
+
+r = Rectangle(6, 4)
+c = Circle(7)
+
+
+print("Area of a rectangle:", r.area())
+print("Area of a circle:", c.area())
+
+```
 ## Output
+<img width="638" height="287" alt="image" src="https://github.com/user-attachments/assets/6aa721e6-9375-4eb0-8716-388fd970ada1" />
 
 ## Result
+Thus the program is executed successfully.
