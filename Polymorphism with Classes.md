@@ -26,7 +26,31 @@ To create two specific classes — `Beans` and `Mango`. Then, create a **generic
 ---
 
 ## 💻 Program
+It is similar to the above question.
+```
+class Turtle:
+    def type(self):
+        print("turtle")
 
+
+class Frog:
+    def type(self):
+        print("frog")
+
+
+
+turtle = Turtle()
+frog = Frog()
+
+
+animals = (turtle, frog)
+
+
+for animal in animals:
+    animal.type()
+```
 ## Output
+<img width="1279" height="281" alt="image" src="https://github.com/user-attachments/assets/4c5ada10-2aa1-4654-972b-6b2348c105e6" />
 
 ## Result
+Thus the program is executed successfully.
